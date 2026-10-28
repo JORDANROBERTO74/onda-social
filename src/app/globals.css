@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-cream: var(--cream);
+  --color-forest: var(--forest);
+  --color-mint: var(--mint);
+  --color-ink: var(--ink);
+  --color-slate: var(--slate);
+  --color-pink: var(--pink);
+  --color-violet: var(--violet);
+  --color-magenta: var(--magenta);
+
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-goudy), ui-serif, Georgia, serif;
+
+  --radius-panel: 60px;
+  --radius-card: 32px;
+}
+
+:root {
+  --paper: #fbfbdc;
+  --cream: #fffef5;
+  --forest: #024e46;
+  --mint: #109d75;
+  --ink: #101826;
+  --slate: #6a7381;
+  --pink: #f680a3;
+  --violet: #9f82ff;
+  --magenta: #fc7aec;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--mint);
+    color: var(--cream);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--forest);
+    outline-offset: 3px;
+  }
+
+  section {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  .animate-rise {
+    animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow var(--spin-duration, 44s) linear infinite;
+  }
+
+  .animate-spin-reverse {
+    animation: spin-slow var(--spin-duration, 44s) linear infinite reverse;
+  }
+
+  .animate-marquee {
+    animation: marquee 34s linear infinite;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-rise,
+  .animate-spin-slow,
+  .animate-spin-reverse,
+  .animate-marquee {
+    animation: none;
+  }
+}
