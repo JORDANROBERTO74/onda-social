@@ -1,6 +1,6 @@
-export const site = {
+﻿export const site = {
   name: "Onda Social",
-  domain: "onda-social.vercel.app",
+  domain: "ondasocial.vercel.app",
   get url() {
     return process.env.NEXT_PUBLIC_SITE_URL || `https://${this.domain}`;
   },

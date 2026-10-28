@@ -1,4 +1,4 @@
-# Onda Social — Provenance & Compliance Ledger
+﻿# Onda Social â€” Provenance & Compliance Ledger
 
 This ledger records the origin, brand transformation and asset provenance for **Onda Social**.
 
@@ -8,7 +8,7 @@ This ledger records the origin, brand transformation and asset provenance for **
 - **Archived copy:** `E:\Projects\landing\next\_archive\smm-agency-growlio` (removed after release)
 - **Rebuilt Project Name:** `onda-social`
 - **Final Repository:** `https://github.com/JORDANROBERTO74/onda-social`
-- **Live Production URL:** `https://onda-social.vercel.app`
+- **Live Production URL:** `https://ondasocial.vercel.app`
 - **Mode:** Change pass over the existing section map, with the rendering layer rebuilt.
 
 The template was used as a structural reference: its ten-section map, its palette and its content model were kept, while every component was re-implemented as responsive Tailwind with typed bilingual copy.
@@ -16,7 +16,7 @@ The template was used as a structural reference: its ten-section map, its palett
 ## 2. Brand & Identity
 
 - **Brand:** Onda Social
-- **Sector:** Social media marketing agency — strategy, paid social, content and UGC.
+- **Sector:** Social media marketing agency â€” strategy, paid social, content and UGC.
 - **Visual system:** Paper (`#fbfbdc`), cream (`#fffef5`), forest green (`#024e46`), mint (`#109d75`), ink (`#101826`), slate (`#6a7381`), plus the service accents pink (`#f680a3`), violet (`#9f82ff`) and magenta (`#fc7aec`).
 - **Typography:** Inter Tight for display and body, Goudy Bookletter 1911 for serif accents, both self-hosted via `next/font/google`.
 - **Locale strategy:** Typed bilingual copy (`en`, `es`) on `/[locale]` routes, negotiated from `Accept-Language` and persisted in the `onda.locale` cookie.
@@ -26,24 +26,24 @@ The original brand ("Nexa Social", with a "CAPRIX" trace in the footer) was disc
 ## 3. Asset & Visual Provenance
 
 - **Photography:** Six images generated for this project with a text-to-image model and stored in `public/images`:
-  - `about-01.jpg` — studio desk with a ring light, paper stocks and colour swatches.
-  - `about-02.jpg` — overhead planning board with fabric and colour samples.
-  - `work-velora.jpg` — silk and brushed metal still life.
-  - `work-nourish.jpg` — pantry bowl and grain on stone.
-  - `work-luma.jpg` — frosted cosmetic glass with water droplets.
-  - `work-techora.jpg` — abstract navy light field.
+  - `about-01.jpg` â€” studio desk with a ring light, paper stocks and colour swatches.
+  - `about-02.jpg` â€” overhead planning board with fabric and colour samples.
+  - `work-velora.jpg` â€” silk and brushed metal still life.
+  - `work-nourish.jpg` â€” pantry bowl and grain on stone.
+  - `work-luma.jpg` â€” frosted cosmetic glass with water droplets.
+  - `work-techora.jpg` â€” abstract navy light field.
 - **People and marks:** No faces, no identifiable individuals, no logos and no readable text appear in any asset. One first draft of `about-01` contained a camera with invented branding on the body and was regenerated before use.
-- **Brand mark:** Custom SVG (`src/app/icon.svg`) — a cream waveform on a forest tile.
+- **Brand mark:** Custom SVG (`src/app/icon.svg`) â€” a cream waveform on a forest tile.
 - **Runtime dependencies:** Zero remote font networks, image hosts, video hosts or CDNs.
 
 ### Discarded reference assets
 
 The template loaded its media from `https://cdn.jiro.build/SMM/` and shipped local stock portraits. All of it was removed before the first commit:
 
-- `a1.png`, `a2.png`, `c1.png`, `1.svg`–`6.svg` and `demo-.mp4` — third-party CDN assets, unreachable without the vendor's infrastructure.
-- `team_1.jpg`, `team_2.jpg`, `avatar_1..3.jpg` — photographs of identifiable people.
+- `a1.png`, `a2.png`, `c1.png`, `1.svg`â€“`6.svg` and `demo-.mp4` â€” third-party CDN assets, unreachable without the vendor's infrastructure.
+- `team_1.jpg`, `team_2.jpg`, `avatar_1..3.jpg` â€” photographs of identifiable people.
 - Brand logos rendered through `react-icons`: Amazon, Microsoft, Klarna, Notion, Vercel and Groupon were presented as clients. Removed; the "client logo" row no longer exists.
-- `placeholder-logo.*`, `placeholder-user.jpg`, `placeholder.jpg`, `placeholder.svg`, `icon-*`, `apple-icon.png` — v0 scaffolding.
+- `placeholder-logo.*`, `placeholder-user.jpg`, `placeholder.jpg`, `placeholder.svg`, `icon-*`, `apple-icon.png` â€” v0 scaffolding.
 
 None of these appear in this repository or its history.
 

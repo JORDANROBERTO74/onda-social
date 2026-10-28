@@ -1,4 +1,4 @@
-# Onda Social — Creative & Paid Social Landing
+﻿# Onda Social â€” Creative & Paid Social Landing
 
 Turn social media into real business growth. A bilingual landing page for a social media marketing agency: strategy, paid campaigns, content and UGC, with transparent plans and a full case-study selector.
 
@@ -6,7 +6,7 @@ Turn social media into real business growth. A bilingual landing page for a soci
 
 ## Overview
 
-Onda is a single-page agency site with ten sections: hero, about, services, case studies, differentiators, process, pricing, testimonials, FAQ and contact footer. It keeps the bold, high-contrast language of the reference — deep forest green over warm paper, serif display type against a tight grotesk — rebuilt as a responsive, typed and accessible implementation.
+Onda is a single-page agency site with ten sections: hero, about, services, case studies, differentiators, process, pricing, testimonials, FAQ and contact footer. It keeps the bold, high-contrast language of the reference â€” deep forest green over warm paper, serif display type against a tight grotesk â€” rebuilt as a responsive, typed and accessible implementation.
 
 Both locales are statically generated, every image and font is self-hosted, and the structured data describes the organisation, its services and the FAQ.
 
@@ -16,7 +16,7 @@ Both locales are statically generated, every image and font is self-hosted, and 
 - **Case-study selector:** Four fictional clients with animated metric counters, proper `tablist`/`tabpanel` semantics and arrow-key navigation.
 - **Motion without a library:** A CSS-orbit hero, a CSS entrance sequence and `requestAnimationFrame` counters. Everything stops under `prefers-reduced-motion`.
 - **Accessible accordion and menu:** `aria-expanded`/`aria-controls` on the FAQ, `Escape` and focus-visible styles on the mobile menu.
-- **Self-hosted imagery:** Six studio photographs generated for this project and served through `next/image` — no stock libraries, no remote media.
+- **Self-hosted imagery:** Six studio photographs generated for this project and served through `next/image` â€” no stock libraries, no remote media.
 - **Self-hosted typography:** Inter Tight and Goudy Bookletter 1911 bundled at build time via `next/font/google`; the browser never contacts a font CDN.
 - **Structured data:** `Organization`, `Service` with an offer catalogue, and `FAQPage` generated from the same dictionaries as the page.
 - **Localised 404:** A `[locale]/[...rest]` catch-all renders the styled not-found page instead of the framework default.
@@ -35,38 +35,38 @@ Both locales are statically generated, every image and font is self-hosted, and 
 
 ```
 onda-social/
-├── docs/
-│   ├── provenance.md          # Compliance ledger and transformation history
-│   └── screenshot.webp        # Visual preview artifact
-├── public/
-│   └── images/                # Two studio images and four case-study images
-├── src/
-│   ├── app/
-│   │   ├── [locale]/
-│   │   │   ├── [...rest]/page.tsx   # Catch-all that renders the 404
-│   │   │   ├── layout.tsx     # Locale shell, font variables, analytics
-│   │   │   ├── not-found.tsx  # Styled 404
-│   │   │   ├── opengraph-image.tsx  # 1200x630 social card
-│   │   │   └── page.tsx       # Composed landing route
-│   │   ├── globals.css        # Design tokens, keyframes and base layers
-│   │   ├── icon.svg           # Wave brand mark and favicon
-│   │   ├── robots.ts
-│   │   └── sitemap.ts
-│   ├── components/            # header, hero, about, services, case-studies,
-│   │                          # why-us, process, pricing, testimonials, faq, footer
-│   ├── config/site.ts         # Domain and locale configuration
-│   ├── i18n/
-│   │   ├── config.ts          # Locale list and cookie name
-│   │   ├── dictionaries/      # Typed English and Spanish copy
-│   │   └── get-dictionary.ts
-│   ├── lib/
-│   │   ├── json-ld.ts         # Organization, Service and FAQPage graph
-│   │   └── seo.ts             # Canonical and hreflang metadata builder
-│   └── proxy.ts               # Locale detection and persistence
-├── eslint.config.mjs
-├── next.config.ts
-├── package.json
-└── tsconfig.json
+â”œâ”€â”€ docs/
+â”‚   â”œâ”€â”€ provenance.md          # Compliance ledger and transformation history
+â”‚   â””â”€â”€ screenshot.webp        # Visual preview artifact
+â”œâ”€â”€ public/
+â”‚   â””â”€â”€ images/                # Two studio images and four case-study images
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ app/
+â”‚   â”‚   â”œâ”€â”€ [locale]/
+â”‚   â”‚   â”‚   â”œâ”€â”€ [...rest]/page.tsx   # Catch-all that renders the 404
+â”‚   â”‚   â”‚   â”œâ”€â”€ layout.tsx     # Locale shell, font variables, analytics
+â”‚   â”‚   â”‚   â”œâ”€â”€ not-found.tsx  # Styled 404
+â”‚   â”‚   â”‚   â”œâ”€â”€ opengraph-image.tsx  # 1200x630 social card
+â”‚   â”‚   â”‚   â””â”€â”€ page.tsx       # Composed landing route
+â”‚   â”‚   â”œâ”€â”€ globals.css        # Design tokens, keyframes and base layers
+â”‚   â”‚   â”œâ”€â”€ icon.svg           # Wave brand mark and favicon
+â”‚   â”‚   â”œâ”€â”€ robots.ts
+â”‚   â”‚   â””â”€â”€ sitemap.ts
+â”‚   â”œâ”€â”€ components/            # header, hero, about, services, case-studies,
+â”‚   â”‚                          # why-us, process, pricing, testimonials, faq, footer
+â”‚   â”œâ”€â”€ config/site.ts         # Domain and locale configuration
+â”‚   â”œâ”€â”€ i18n/
+â”‚   â”‚   â”œâ”€â”€ config.ts          # Locale list and cookie name
+â”‚   â”‚   â”œâ”€â”€ dictionaries/      # Typed English and Spanish copy
+â”‚   â”‚   â””â”€â”€ get-dictionary.ts
+â”‚   â”œâ”€â”€ lib/
+â”‚   â”‚   â”œâ”€â”€ json-ld.ts         # Organization, Service and FAQPage graph
+â”‚   â”‚   â””â”€â”€ seo.ts             # Canonical and hreflang metadata builder
+â”‚   â””â”€â”€ proxy.ts               # Locale detection and persistence
+â”œâ”€â”€ eslint.config.mjs
+â”œâ”€â”€ next.config.ts
+â”œâ”€â”€ package.json
+â””â”€â”€ tsconfig.json
 ```
 
 ## Getting Started
@@ -108,7 +108,7 @@ The site is deployed on Vercel with the default Next.js preset. Import the repos
 vercel deploy --prod
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the canonical URL falls back to `https://onda-social.vercel.app`.
+Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the canonical URL falls back to `https://ondasocial.vercel.app`.
 
 ## Performance & SEO
 
@@ -139,4 +139,4 @@ This project was rebuilt under clean-room principles:
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License â€” see the [LICENSE](LICENSE) file for details.
