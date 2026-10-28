@@ -44,7 +44,7 @@ export const en = {
     secondary:
       "From daily content to paid campaigns, we bring creativity and data together to turn social attention into real business opportunities — one meaningful connection at a time.",
     images: [
-      { src: "/images/about-01.jpg", alt: "Studio desk with a camera, ring light and printed notes" },
+      { src: "/images/about-01.jpg", alt: "Studio desk with a ring light, paper stock and colour swatches" },
       { src: "/images/about-02.jpg", alt: "Overhead view of a content planning wall with colour swatches" },
     ],
   },

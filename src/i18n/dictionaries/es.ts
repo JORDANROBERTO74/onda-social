@@ -46,7 +46,7 @@ export const es: Dictionary = {
     secondary:
       "Del contenido diario a las campañas de pago, unimos creatividad y datos para convertir la atención social en oportunidades reales de negocio, una conexión significativa a la vez.",
     images: [
-      { src: "/images/about-01.jpg", alt: "Escritorio de estudio con cámara, aro de luz y notas impresas" },
+      { src: "/images/about-01.jpg", alt: "Escritorio de estudio con aro de luz, papel y muestras de color" },
       { src: "/images/about-02.jpg", alt: "Vista cenital de un panel de planificación con muestras de color" },
     ],
   },
