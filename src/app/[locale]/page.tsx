@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
+import { CopyProvider } from "@/i18n/copy-context";
 import { constructMetadata } from "@/lib/seo";
 import { buildJsonLd } from "@/lib/json-ld";
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
-import { About } from "@/components/about";
-import { Services } from "@/components/services";
-import { CaseStudies } from "@/components/case-studies";
-import { WhyUs } from "@/components/why-us";
-import { Process } from "@/components/process";
-import { Pricing } from "@/components/pricing";
-import { Testimonials } from "@/components/testimonials";
-import { Faq } from "@/components/faq";
-import { Footer } from "@/components/footer";
+import Header from "@/components/sections/header";
+import About from "@/components/sections/about";
+import Services from "@/components/sections/services";
+import CaseStudy from "@/components/sections/case-studies";
+import Whychooseus from "@/components/sections/why-us";
+import Process from "@/components/sections/process";
+import Pricing from "@/components/sections/pricing";
+import Testimonials from "@/components/sections/testimonials";
+import FAQ from "@/components/sections/faq";
+import Footer from "@/components/sections/footer";
 
 export async function generateMetadata({
   params,
@@ -43,22 +43,23 @@ export default async function Page({
   const dict = getDictionary(locale as Locale);
 
   return (
-    <main className="overflow-x-hidden">
-      <Header content={dict.navigation} locale={locale as Locale} />
-      <Hero content={dict.hero} />
-      <About content={dict.about} />
-      <Services content={dict.services} />
-      <CaseStudies content={dict.work} />
-      <WhyUs content={dict.why} />
-      <Process content={dict.process} />
-      <Pricing content={dict.pricing} />
-      <Testimonials content={dict.testimonials} />
-      <Faq content={dict.faq} />
-      <Footer content={dict.footer} locale={locale as Locale} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd(locale as Locale, dict)) }}
-      />
-    </main>
+    <CopyProvider dict={dict}>
+      <main className="min-h-screen overflow-x-hidden bg-[#f6f5f2] text-[#20221f]">
+        <Header />
+        <About />
+        <Services />
+        <CaseStudy />
+        <Whychooseus />
+        <Process />
+        <Pricing />
+        <Testimonials />
+        <FAQ />
+        <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd(locale as Locale, dict)) }}
+        />
+      </main>
+    </CopyProvider>
   );
 }

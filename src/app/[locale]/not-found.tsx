@@ -1,26 +1,58 @@
 import Link from "next/link";
 import { defaultLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
-import { Arrow } from "@/components/arrow";
 
 export default function NotFound() {
   const dict = getDictionary(defaultLocale).notFound;
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-      <span className="text-xl font-semibold tracking-tight">
-        Onda<span className="text-mint">.</span>
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "0 24px",
+        textAlign: "center",
+        fontFamily: "'Inter Tight', Arial, sans-serif",
+        color: "#024E46",
+      }}
+    >
+      <span style={{ fontSize: "18px", fontWeight: 600, letterSpacing: "0.04em" }}>
+        Onda Social
       </span>
-      <h1 className="mt-8 max-w-2xl font-serif text-[clamp(2.75rem,8vw,6rem)] leading-[0.95]">
+      <h1
+        style={{
+          marginTop: "32px",
+          maxWidth: "720px",
+          fontFamily: "'Goudy Bookletter 1911', serif",
+          fontSize: "clamp(2.75rem, 8vw, 6rem)",
+          lineHeight: 0.95,
+          fontWeight: 400,
+        }}
+      >
         {dict.title}
       </h1>
-      <p className="mt-6 max-w-md text-sm leading-relaxed text-slate">{dict.body}</p>
+      <p style={{ marginTop: "24px", maxWidth: "420px", fontSize: "15px", lineHeight: 1.6, opacity: 0.75 }}>
+        {dict.body}
+      </p>
       <Link
         href={`/${defaultLocale}`}
-        className="mt-10 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-4 text-xs font-semibold text-cream transition-transform duration-200 hover:-translate-y-0.5"
+        style={{
+          marginTop: "40px",
+          display: "inline-flex",
+          alignItems: "center",
+          padding: "16px 28px",
+          borderRadius: "999px",
+          backgroundColor: "#024E46",
+          color: "#FBFBDC",
+          fontSize: "13px",
+          fontWeight: 600,
+          textDecoration: "none",
+        }}
       >
         {dict.cta}
-        <Arrow />
       </Link>
     </main>
   );

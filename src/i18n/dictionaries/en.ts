@@ -1,204 +1,165 @@
 export const en = {
   meta: {
-    title: "Onda Social — Turn attention into measurable growth",
+    title: "Onda Social — Turn social media into measurable growth",
     description:
-      "Social media marketing agency for ambitious brands: strategy, paid campaigns, content and UGC that turn followers into customers.",
-    ogTagline: "Strategy, content and paid social that turn followers into customers.",
+      "Onda Social is a social media marketing agency helping ambitious brands grow with clear strategy, creative content and paid campaigns.",
   },
-  navigation: {
-    brand: "Onda",
-    links: {
-      services: "Services",
-      work: "Work",
-      process: "Process",
-      pricing: "Pricing",
-      faq: "FAQ",
-    },
-    cta: "Book a call",
-    localeLabel: "Language",
-    openMenu: "Open menu",
-    closeMenu: "Close menu",
+
+  header: {
+    brand: "Onda Social",
+    nav: ["Home", "Services", "About Us", "Case Studies"],
+    cta: "Start a Project",
+    heroTitle: "Turn social media into real business growth",
+    heroSubtitle:
+      "We help brands grow on social media with creative content, strategic campaigns, and data-driven marketing that turns followers into customers.",
+    heroCta: "Get a Free Strategy",
+    views: "32M Views",
+    socialAlt: "Social icon",
   },
-  hero: {
-    eyebrow: "Social media marketing agency",
-    titleLead: "Turn social media into",
-    titleEmphasis: "real",
-    titleTail: "business growth",
-    intro:
-      "We help ambitious brands grow on social with clear strategy, creative content and campaigns that turn followers into customers.",
-    primaryCta: "See our work",
-    secondaryCta: "View plans",
-    stats: [
-      { value: "120+", label: "Brands supported" },
-      { value: "3.4x", label: "Average return on ad spend" },
-      { value: "18", label: "Markets" },
-    ],
-    orbitLabel: "Channels we work with",
-  },
+
   about: {
-    eyebrow: "01 — About the studio",
+    infoLeft:
+      "We Help Ambitious Brands Build A Stronger Presence Across Social Media With Clear Strategy, Creative Content, And Campaigns That Connect With The Right Audience.",
+    heading: "About us",
+    infoRight:
+      "From Daily Content To Paid Campaigns, We Bring Creativity And Data Together To Turn Social Attention Into Real Business Opportunities. One Meaningful Connection At A Time.",
     statement:
-      "We help ambitious brands build a stronger presence across social media.",
-    body:
-      "Clear strategy, creative content and campaigns that connect with the right audience. No vanity metrics, no posting for the sake of it.",
-    secondary:
-      "From daily content to paid campaigns, we bring creativity and data together to turn social attention into real business opportunities — one meaningful connection at a time.",
-    images: [
-      { src: "/images/about-01.jpg", alt: "Studio desk with a ring light, paper stock and colour swatches" },
-      { src: "/images/about-02.jpg", alt: "Overhead view of a content planning wall with colour swatches" },
-    ],
+      "We’re a results driven social media marketing agency helping brands build meaningful connections.",
+    cta: "Let’s Work Together",
+    teamAlt1: "Creative studio desk with colour swatches and a plant",
+    teamAlt2: "Agency workspace with monitors in daylight",
   },
+
   services: {
-    eyebrow: "02 — What we do",
-    title: "Four ways we move the needle.",
-    intro:
-      "Every engagement starts with the same question: what should social actually do for this business?",
+    tag: "Our Services",
+    title: "Everything Your Brand Needs to Grow on Social",
+    subtitle:
+      "From strategy to content and campaigns, we create social media solutions that help your brand reach more people, build stronger connections, and drive real results.",
     items: [
       {
         title: "Social Media Strategy",
-        desc:
-          "A clear plan that puts your brand in front of the right audience: research, positioning and a campaign roadmap you can act on.",
-        badges: ["Audit", "Positioning", "Content pillars", "Roadmap"],
-        tone: "pink",
+        desc: "Build a clear social media strategy that puts your brand in front of the right audience. We combine audience insights.",
+        badges: ["Audit", "Positioning", "Contents Pillar", "Campaign Roadmap"],
       },
       {
         title: "Paid Social Ads",
-        desc:
-          "Targeted campaigns built to increase reach, leads and conversions — with budgets that stop guessing and start compounding.",
-        badges: ["Meta", "TikTok", "Performance tracking"],
-        tone: "violet",
+        desc: "Reach the right people with targeted social campaigns designed to increase visibility, engagement, leads, and conversions.",
+        badges: ["Meta Ads", "Campaign Strategy", "Performance Tracking"],
       },
       {
         title: "Content Creation",
-        desc:
-          "Scroll-stopping content that captures attention, tells your story and keeps the feed alive week after week.",
-        badges: ["Art direction", "Social posts", "Brand content"],
-        tone: "magenta",
+        desc: "Create scroll-stopping content that captures attention, communicates your brand story, and keeps your audience engaged.",
+        badges: ["Creative Design", "Social Posts", "Brand Content"],
       },
       {
-        title: "UGC & Video",
-        desc:
-          "Real stories and short-form video that build trust, feel native to the platform and make the brand relatable.",
-        badges: ["UGC videos", "Reels", "Short-form"],
-        tone: "forest",
+        title: "UGC & Video Content",
+        desc: "Turn real stories and engaging videos into authentic content that builds trust and makes your brand more relatable.",
+        badges: ["Audit", "UGC Videos", "Reels", "Short-Form Video"],
       },
     ],
   },
-  work: {
-    eyebrow: "03 — Selected work",
-    title: "Work that moved the numbers.",
-    aside:
-      "Four collaborations, four different problems. Same discipline: find the insight, then build the system around it.",
-    disclaimer: "Fictional brands and illustrative figures.",
+
+  cases: {
+    tag: "Case studies",
+    title: "Real Work. Real Growth.",
+    subtitle:
+      "Explore How We Help Brands Turn Creative Ideas And Smart Social Strategies Into Measurable Results.",
     items: [
       {
-        client: "Velora",
-        sector: "Fashion",
+        name: "Velora - Fashion",
+        logo: "Velora",
         description:
-          "A consistent presence with scroll-stopping content and targeted ads, built around a single seasonal narrative.",
-        metrics: [
-          { value: "+185%", label: "Engagement" },
-          { value: "+320%", label: "Reach" },
-          { value: "+240%", label: "Sales" },
-        ],
-        image: "/images/work-velora.jpg",
-        alt: "Silk fabric and metal detail in a studio still life",
+          "We Helped Velora Build A Consistent Social Presence With Scroll-Stopping Content And Targeted Ad Campaigns, Resulting In Higher Engagement, Wider Reach, And A Significant Increase In Sales.",
+        metrics: ["+185% - Engagement", "+320% - Reach", "+240% - Sales"],
       },
       {
-        client: "NourishCo",
-        sector: "Food",
+        name: "NourishCo - Food",
+        logo: "NourishCo",
         description:
-          "Redesigned messaging and a multi-platform campaign that turned a quiet pantry brand into a daily habit.",
-        metrics: [
-          { value: "+150%", label: "Engagement" },
-          { value: "+210%", label: "Reach" },
-          { value: "+190%", label: "Sales" },
-        ],
-        image: "/images/work-nourish.jpg",
-        alt: "Product still life over stone with soft daylight",
+          "NourishCo partnered with us to redesign their brand messaging and launch a multi-platform social media campaign, driving unprecedented organic growth and brand loyalty.",
+        metrics: ["+150% - Engagement", "+210% - Reach", "+190% - Sales"],
       },
       {
-        client: "LumaSkin",
-        sector: "Beauty",
+        name: "LumaSkin - Beauty",
+        logo: "LumaSkin",
         description:
-          "Influencer partnerships and a visual system behind a launch that broke the brand's own records.",
-        metrics: [
-          { value: "+200%", label: "Engagement" },
-          { value: "+400%", label: "Reach" },
-          { value: "+310%", label: "Sales" },
-        ],
-        image: "/images/work-luma.jpg",
-        alt: "Cosmetic glass and water in a minimal composition",
+          "Through influencer partnerships and a visually stunning content strategy, LumaSkin achieved record-breaking conversions during their summer product launch.",
+        metrics: ["+200% - Engagement", "+400% - Reach", "+310% - Sales"],
       },
       {
-        client: "Techora",
-        sector: "B2B SaaS",
+        name: "Techora - Technology",
+        logo: "Techora",
         description:
-          "Educational video and tightly targeted campaigns that positioned the product as a category reference.",
-        metrics: [
-          { value: "+120%", label: "Leads" },
-          { value: "+180%", label: "Reach" },
-          { value: "+145%", label: "Signups" },
-        ],
-        image: "/images/work-techora.jpg",
-        alt: "Abstract light and screen textures in deep blue",
+          "We positioned Techora as a thought leader in the B2B SaaS space with educational video content and highly targeted LinkedIn campaigns.",
+        metrics: ["+120% - Leads", "+180% - Reach", "+145% - Signups"],
+      },
+      {
+        name: "Rideon - Automotive",
+        logo: "Rideon",
+        description:
+          "Rideon experienced a massive surge in dealership visits following our localized social media ad campaigns highlighting their new electric vehicle lineup.",
+        metrics: ["+220% - Engagement", "+280% - Reach", "+170% - Visits"],
       },
     ],
   },
+
   why: {
-    eyebrow: "04 — Why Onda",
-    title: "Strategy first. Creative always.",
+    tag: "Why Choose Us",
+    imageAlt: "Onda Social workspace",
+    approachTag: "Our Approach",
+    title: "Social Strategy Built Around Your Growth",
+    lead: "We combine creative thinking, smart strategy, and data-driven insights to help your brand stand out, connect with the right audience, and grow consistently.",
+    approachLead:
+      "We combine smart social strategies, creative content, and performance-driven campaigns to help brands stand out online. Every decision is shaped around your audience, your goals, and measurable growth.",
     items: [
-      {
-        title: "Strategy before posts",
-        desc: "We agree on the job social has to do before we design a single asset.",
-      },
-      {
-        title: "Creative with a reason",
-        desc: "Every format exists to earn the next second of attention — and a measurable action.",
-      },
-      {
-        title: "Data in the room",
-        desc: "Reporting that says what worked, what didn't and what we change next week.",
-      },
-      {
-        title: "One team, no handoffs",
-        desc: "Strategy, creative, media and reporting sit in the same conversation.",
-      },
+      "Strategy-First Marketing",
+      "Creative Content & Design",
+      "UGC & Video Content",
+      "Data-Driven Campaigns",
+      "Performance-Focused Growth",
     ],
   },
+
   process: {
-    eyebrow: "05 — Process",
-    title: "Four steps, no mystery.",
+    tag: "Our Process",
+    title: "Our Roadmap to Your Growth",
+    subtitle:
+      "Explore how we help brands turn creative ideas and smart social strategies into measurable results.",
     steps: [
       {
-        title: "Discover",
-        desc:
-          "We start by understanding the brand from the inside: goals, audience, competitors and what makes it different.",
+        name: "Discover",
+        desc: "We start by understanding your brand from the inside out. We look at your goals, target audience, competitors, current social presence, and what makes your brand different.",
       },
       {
-        title: "Strategize",
-        desc:
-          "A roadmap built to maximise online impact, so every post and campaign answers to a business objective.",
+        name: "Strategize",
+        desc: "We build a tailored roadmap designed to maximize your online impact, ensuring every post and campaign aligns perfectly with your overarching business objectives.",
       },
       {
-        title: "Create & launch",
-        desc:
-          "We craft the content and launch the campaigns across the platforms that actually matter to your audience.",
+        name: "Create & Launch",
+        desc: "Our team crafts scroll-stopping content and launches targeted campaigns, bringing the strategy to life across all chosen social media platforms.",
       },
       {
-        title: "Analyze & grow",
-        desc:
-          "We monitor performance, read the numbers and optimise in real time so growth compounds instead of plateauing.",
+        name: "Analyze & Grow",
+        desc: "We continuously monitor performance, analyze key metrics, and optimize campaigns in real-time to ensure sustained, measurable growth for your brand.",
       },
     ],
+    metrics: [
+      { value: "+185%", label: "Engagement Growth" },
+      { value: "+320%", label: "Social Reach" },
+      { value: "240%", label: "Sales Growth" },
+      { value: "500K+", label: "Content Views" },
+      { value: "4.9/5", label: "Client Satisfaction" },
+      { value: "95%", label: "Client Retention" },
+    ],
   },
+
   pricing: {
-    eyebrow: "06 — Plans",
-    title: "Plans for every stage.",
-    aside:
-      "Start with what you need today and scale the scope as the results come in.",
-    note: "Prices in USD per month. Cancel any time.",
+    tag: "Pricing",
+    title: "Plans for Every Stage",
+    subtitle:
+      "Choose a plan that fits your brand today and scale your social media strategy as your business grows.",
+    included: "What’s included",
+    getStarted: "Get Started",
     plans: [
       {
         name: "Starter",
@@ -206,14 +167,12 @@ export const en = {
         period: "/ month",
         description: "For brands building their social presence.",
         features: [
-          "2 social platforms",
-          "12 posts per month",
-          "5 target audiences",
-          "3 engagement strategies",
-          "1 content calendar",
+          "2 Social Platforms",
+          "12 Posts / Month",
+          "5 Target Audiences",
+          "3 Engagement Strategies",
+          "1 Content Calendar",
         ],
-        featured: false,
-        cta: "Start here",
       },
       {
         name: "Professional",
@@ -221,125 +180,105 @@ export const en = {
         period: "/ month",
         description: "For brands ready to grow consistently.",
         features: [
-          "4 social platforms",
-          "25 posts per month",
-          "10 target audiences",
-          "6 engagement strategies",
-          "2 content calendars",
+          "4 Social Platforms",
+          "25 Posts / Month",
+          "8 Target Audiences",
+          "6 Engagement Strategies",
+          "2 Content Calendars",
         ],
-        featured: true,
-        cta: "Choose Professional",
       },
       {
         name: "Enterprise",
-        price: "$1,999",
+        price: "$1999",
         period: "/ month",
-        description: "For teams that need a complete growth system.",
+        description: "For brands looking for a complete social growth solution.",
         features: [
-          "Unlimited platforms",
-          "50 posts per month",
-          "Unlimited audiences",
-          "Advanced engagement strategies",
-          "Custom content calendars",
+          "Unlimited Social Platforms",
+          "50 Posts / Month",
+          "Unlimited Target Audiences",
+          "Advanced Engagement Strategies",
+          "Custom Content Calendars",
         ],
-        featured: false,
-        cta: "Talk to sales",
       },
     ],
   },
+
   testimonials: {
-    eyebrow: "07 — Testimonials",
-    title: "What partners say.",
-    items: [
-      {
-        quote: "Our return on ad spend exploded in the first quarter. The reporting alone changed how we plan.",
-        name: "Marta Ruiz",
-        role: "Founder, Velora",
-        initials: "MR",
-      },
-      {
-        quote: "They rebuilt our social presence from scratch and made it feel like us, only sharper.",
-        name: "Diego Ferrán",
-        role: "CMO, NourishCo",
-        initials: "DF",
-      },
-      {
-        quote: "Professional, creative and genuinely obsessed with the numbers. A rare combination.",
-        name: "Lucía Vidal",
-        role: "Head of Growth, LumaSkin",
-        initials: "LV",
-      },
+    tag: "Testimonials",
+    title: "What Our Clients Say",
+    subtitle:
+      "We work closely with ambitious brands to create social strategies that make a real difference. Here’s what some of our clients say about working with us.",
+    quotes: [
+      '"Best agency ever! Our ROI exploded."',
+      '"They completely transformed our brand."',
+      '"Highly recommended for serious growth."',
+      '"Professional, creative, and data-driven."',
+      '"We love our new social presence."',
+      '"An absolute pleasure to work with."',
+      '"Results speak for themselves."',
+      '"Exceptional attention to detail."',
+      '"Our sales doubled in 3 months."',
+      '"A true partner in our success."',
     ],
   },
+
   faq: {
-    eyebrow: "08 — FAQ",
-    title: "Questions we get every week.",
+    tag: "FAQ",
+    title: "Everything You Need to Know",
+    subtitle:
+      "Everything you need to know before we start working together. Still curious? Send us a message and we’ll reply within one business day.",
+    questionsLabel: "Questions",
+    answerLabel: "Answer",
+    contactText: "Can't find what you're looking for?",
+    contactCta: "Contact Us",
     items: [
       {
-        question: "What does a social media agency actually do?",
+        question: "What does an SMM agency do?",
         answer:
-          "We manage and grow your presence through strategy, content production, paid campaigns, community management and performance reporting.",
+          "We manage and grow your social media presence through strategy, content, advertising, community management, and performance tracking.",
       },
       {
-        question: "Which platforms do you work with?",
+        question: "Which social platforms do you work with?",
         answer:
-          "Instagram, TikTok, LinkedIn, Facebook, YouTube and Pinterest. We recommend the two or three where your audience actually spends time.",
+          "We work across all major platforms including Instagram, TikTok, LinkedIn, Facebook, X (Twitter), and Pinterest to maximize your reach.",
       },
       {
-        question: "Can you create the content for us?",
+        question: "Can you create content for our brand?",
         answer:
-          "Yes. A dedicated creative team produces photography, short-form video, graphics and copy tailored to your brand voice.",
+          "Yes, we have a dedicated creative team that produces high-quality photos, short-form videos, graphics, and written copy tailored to your brand voice.",
       },
       {
         question: "Do you manage paid advertising?",
         answer:
-          "We plan, launch and optimise paid social campaigns end to end, with budgets and targets agreed before launch.",
+          "Absolutely. We design, launch, and optimize paid social campaigns to drive targeted traffic, leads, and conversions with a strong ROI.",
       },
       {
-        question: "How long before we see results?",
+        question: "How long does it take to see results?",
         answer:
-          "Early engagement signals usually appear within weeks. Consistent growth and measurable return typically take three to six months of sustained work.",
+          "While early engagement spikes can happen in weeks, consistent brand growth and measurable ROI typically take 3 to 6 months of sustained strategy.",
       },
     ],
   },
+
   footer: {
-    brand: "Onda",
-    eyebrow: "Ready when you are",
-    title: "Let's grow something worth following.",
-    email: "hola@onda.example",
-    locations: "Madrid · Remote",
-    socials: [
-      { label: "Instagram", href: "#contact" },
-      { label: "LinkedIn", href: "#contact" },
-      { label: "TikTok", href: "#contact" },
-    ],
-    columns: [
-      {
-        title: "Agency",
-        links: [
-          { label: "Work", href: "#work" },
-          { label: "Services", href: "#services" },
-          { label: "About", href: "#about" },
-          { label: "Process", href: "#process" },
-        ],
-      },
-      {
-        title: "Plans",
-        links: [
-          { label: "Starter", href: "#pricing" },
-          { label: "Professional", href: "#pricing" },
-          { label: "Enterprise", href: "#pricing" },
-          { label: "FAQ", href: "#faq" },
-        ],
-      },
-    ],
-    copyright: "© 2026 Onda Social",
-    disclaimer: "Case studies use fictional brands and illustrative figures.",
+    headline: "Don’t Hesitate to Reach Out",
+    cta: "Get Started",
+    navigationTitle: "Navigation",
+    servicesTitle: "Services",
+    connectTitle: "Connect",
+    aboutTitle: "Onda Social 2026",
+    aboutText: "Social media strategy, content and campaigns for ambitious brands.",
+    address: "Madrid, Spain",
+    navigation: ["Work", "Services", "About Us", "Process"],
+    services: ["Social Strategy", "Content Creation", "Paid Social", "UGC & Video"],
+    connect: ["Instagram", "Behance", "LinkedIn", "Dribbble"],
+    copyright: "© 2026 Onda Social. All Rights Reserved.",
   },
+
   notFound: {
-    title: "This page went off-grid.",
-    body: "The link you followed does not exist, or the content moved somewhere else.",
-    cta: "Back to the studio",
+    title: "This page drifted away.",
+    body: "The link you followed doesn’t exist anymore. Let’s get you back to the good stuff.",
+    cta: "Back to home",
   },
 };
 

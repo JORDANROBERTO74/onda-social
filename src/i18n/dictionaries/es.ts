@@ -2,345 +2,284 @@ import type { Dictionary } from "./en";
 
 export const es: Dictionary = {
   meta: {
-    title: "Onda Social — Convierte la atención en crecimiento medible",
+    title: "Onda Social — Convierte las redes en crecimiento medible",
     description:
-      "Agencia de social media para marcas ambiciosas: estrategia, campañas de pago, contenido y UGC que convierten seguidores en clientes.",
-    ogTagline: "Estrategia, contenido y paid social que convierten seguidores en clientes.",
+      "Onda Social es una agencia de marketing en redes sociales que ayuda a marcas ambiciosas a crecer con estrategia, contenido creativo y campañas de pago.",
   },
-  navigation: {
-    brand: "Onda",
-    links: {
-      services: "Servicios",
-      work: "Trabajo",
-      process: "Proceso",
-      pricing: "Planes",
-      faq: "FAQ",
-    },
-    cta: "Agendar llamada",
-    localeLabel: "Idioma",
-    openMenu: "Abrir menú",
-    closeMenu: "Cerrar menú",
+
+  header: {
+    brand: "Onda Social",
+    nav: ["Inicio", "Servicios", "Nosotros", "Casos"],
+    cta: "Empezar un proyecto",
+    heroTitle: "Convierte las redes en crecimiento real",
+    heroSubtitle:
+      "Ayudamos a las marcas a crecer en redes sociales con contenido creativo, campañas estratégicas y marketing basado en datos que convierte seguidores en clientes.",
+    heroCta: "Pide una estrategia gratis",
+    views: "32M visualizaciones",
+    socialAlt: "Icono de red social",
   },
-  hero: {
-    eyebrow: "Agencia de social media",
-    titleLead: "Convierte las redes en",
-    titleEmphasis: "crecimiento",
-    titleTail: "real de negocio",
-    intro:
-      "Ayudamos a marcas ambiciosas a crecer en redes con estrategia clara, contenido creativo y campañas que transforman seguidores en clientes.",
-    primaryCta: "Ver proyectos",
-    secondaryCta: "Ver planes",
-    stats: [
-      { value: "120+", label: "Marcas acompañadas" },
-      { value: "3,4x", label: "Retorno medio en publicidad" },
-      { value: "18", label: "Mercados" },
-    ],
-    orbitLabel: "Canales con los que trabajamos",
-  },
+
   about: {
-    eyebrow: "01 — Sobre el estudio",
+    infoLeft:
+      "Ayudamos a marcas ambiciosas a construir una presencia más sólida en redes sociales con estrategia clara, contenido creativo y campañas que conectan con el público adecuado.",
+    heading: "Nosotros",
+    infoRight:
+      "Del contenido diario a las campañas de pago, unimos creatividad y datos para convertir la atención social en oportunidades reales de negocio. Una conexión significativa a la vez.",
     statement:
-      "Ayudamos a marcas ambiciosas a construir una presencia más sólida en redes sociales.",
-    body:
-      "Estrategia clara, contenido creativo y campañas que conectan con la audiencia correcta. Sin métricas de vanidad ni publicaciones por cumplir.",
-    secondary:
-      "Del contenido diario a las campañas de pago, unimos creatividad y datos para convertir la atención social en oportunidades reales de negocio, una conexión significativa a la vez.",
-    images: [
-      { src: "/images/about-01.jpg", alt: "Escritorio de estudio con aro de luz, papel y muestras de color" },
-      { src: "/images/about-02.jpg", alt: "Vista cenital de un panel de planificación con muestras de color" },
-    ],
+      "Somos una agencia de redes sociales centrada en resultados. Creamos conexiones que importan.",
+    cta: "Trabajemos juntos",
+    teamAlt1: "Escritorio de estudio creativo con muestras de color y una planta",
+    teamAlt2: "Espacio de agencia con monitores y luz natural",
   },
+
   services: {
-    eyebrow: "02 — Qué hacemos",
-    title: "Cuatro formas de mover la aguja.",
-    intro:
-      "Todo proyecto empieza con la misma pregunta: ¿qué tiene que conseguir social para este negocio?",
+    tag: "Servicios",
+    title: "Todo lo que tu marca necesita para crecer en redes",
+    subtitle:
+      "De la estrategia al contenido y las campañas, creamos soluciones de redes sociales que ayudan a tu marca a llegar a más gente, crear vínculos más fuertes y lograr resultados reales.",
     items: [
       {
-        title: "Estrategia de redes",
-        desc:
-          "Un plan claro que pone tu marca frente a la audiencia correcta: investigación, posicionamiento y una hoja de ruta accionable.",
-        badges: ["Auditoría", "Posicionamiento", "Pilares de contenido", "Hoja de ruta"],
-        tone: "pink",
+        title: "Estrategia en redes",
+        desc: "Creamos una estrategia clara que pone tu marca frente al público adecuado, combinando datos de audiencia con una dirección creativa concreta.",
+        badges: ["Auditoría", "Posicionamiento", "Pilares", "Plan de campaña"],
       },
       {
         title: "Publicidad social",
-        desc:
-          "Campañas segmentadas para aumentar alcance, leads y conversiones, con presupuestos que dejan de adivinar y empiezan a componer.",
-        badges: ["Meta", "TikTok", "Medición de resultados"],
-        tone: "violet",
+        desc: "Llega a las personas adecuadas con campañas segmentadas diseñadas para aumentar visibilidad, interacción, contactos y conversiones.",
+        badges: ["Meta Ads", "Estrategia", "Resultados"],
       },
       {
         title: "Creación de contenido",
-        desc:
-          "Contenido que detiene el scroll, cuenta tu historia y mantiene el feed vivo semana tras semana.",
-        badges: ["Dirección de arte", "Piezas sociales", "Contenido de marca"],
-        tone: "magenta",
+        desc: "Producimos contenido que frena el scroll, cuenta la historia de tu marca y mantiene a tu audiencia conectada.",
+        badges: ["Diseño creativo", "Publicaciones", "Marca"],
       },
       {
         title: "UGC y vídeo",
-        desc:
-          "Historias reales y vídeo corto que generan confianza, se sienten nativos y acercan la marca a su gente.",
-        badges: ["Vídeos UGC", "Reels", "Formato corto"],
-        tone: "forest",
+        desc: "Convertimos historias reales y vídeos con gancho en contenido auténtico que genera confianza y acerca tu marca a la gente.",
+        badges: ["Auditoría", "Vídeos UGC", "Reels", "Vídeo corto"],
       },
     ],
   },
-  work: {
-    eyebrow: "03 — Trabajo seleccionado",
-    title: "Trabajo que movió los números.",
-    aside:
-      "Cuatro colaboraciones, cuatro problemas distintos. La misma disciplina: encontrar el insight y construir el sistema alrededor.",
-    disclaimer: "Marcas ficticias y cifras ilustrativas.",
+
+  cases: {
+    tag: "Casos",
+    title: "Resultados reales.",
+    subtitle:
+      "Descubre cómo ayudamos a las marcas a convertir ideas creativas y estrategias inteligentes en resultados medibles.",
     items: [
       {
-        client: "Velora",
-        sector: "Moda",
+        name: "Velora - Moda",
+        logo: "Velora",
         description:
-          "Una presencia consistente con contenido que detiene el scroll y anuncios segmentados, construida sobre una única narrativa de temporada.",
-        metrics: [
-          { value: "+185%", label: "Interacción" },
-          { value: "+320%", label: "Alcance" },
-          { value: "+240%", label: "Ventas" },
-        ],
-        image: "/images/work-velora.jpg",
-        alt: "Detalle de seda y metal en un bodegón de estudio",
+          "Ayudamos a Velora a construir una presencia constante en redes con contenido que detiene el scroll y campañas segmentadas, logrando más interacción, más alcance y un aumento significativo de las ventas.",
+        metrics: ["+185% - Interacción", "+320% - Alcance", "+240% - Ventas"],
       },
       {
-        client: "NourishCo",
-        sector: "Alimentación",
+        name: "NourishCo - Comida",
+        logo: "NourishCo",
         description:
-          "Nuevo mensaje y una campaña multiplataforma que convirtió una marca de despensa discreta en un hábito diario.",
-        metrics: [
-          { value: "+150%", label: "Interacción" },
-          { value: "+210%", label: "Alcance" },
-          { value: "+190%", label: "Ventas" },
-        ],
-        image: "/images/work-nourish.jpg",
-        alt: "Bodegón de producto sobre piedra con luz suave",
+          "NourishCo rediseñó su mensaje de marca con nosotros y lanzó una campaña multiplataforma que impulsó un crecimiento orgánico y una fidelidad sin precedentes.",
+        metrics: ["+150% - Interacción", "+210% - Alcance", "+190% - Ventas"],
       },
       {
-        client: "LumaSkin",
-        sector: "Belleza",
+        name: "LumaSkin - Belleza",
+        logo: "LumaSkin",
         description:
-          "Colaboraciones con creadores y un sistema visual detrás de un lanzamiento que rompió los propios récords de la marca.",
-        metrics: [
-          { value: "+200%", label: "Interacción" },
-          { value: "+400%", label: "Alcance" },
-          { value: "+310%", label: "Ventas" },
-        ],
-        image: "/images/work-luma.jpg",
-        alt: "Vidrio cosmético y agua en una composición minimalista",
+          "Con colaboraciones de creadores y una estrategia visual muy cuidada, LumaSkin batió su récord de conversiones durante el lanzamiento de verano.",
+        metrics: ["+200% - Interacción", "+400% - Alcance", "+310% - Ventas"],
       },
       {
-        client: "Techora",
-        sector: "B2B SaaS",
+        name: "Techora - SaaS",
+        logo: "Techora",
         description:
-          "Vídeo educativo y campañas muy segmentadas que posicionaron el producto como referencia de categoría.",
-        metrics: [
-          { value: "+120%", label: "Leads" },
-          { value: "+180%", label: "Alcance" },
-          { value: "+145%", label: "Altas" },
-        ],
-        image: "/images/work-techora.jpg",
-        alt: "Texturas abstractas de luz y pantalla en azul profundo",
+          "Posicionamos a Techora como referente del SaaS B2B con contenido educativo en vídeo y campañas muy segmentadas en LinkedIn.",
+        metrics: ["+120% - Contactos", "+180% - Alcance", "+145% - Registros"],
+      },
+      {
+        name: "Rideon - Autos",
+        logo: "Rideon",
+        description:
+          "Rideon multiplicó las visitas a sus concesionarios tras nuestras campañas locales en redes, centradas en su nueva gama de vehículos eléctricos.",
+        metrics: ["+220% - Interacción", "+280% - Alcance", "+170% - Visitas"],
       },
     ],
   },
+
   why: {
-    eyebrow: "04 — Por qué Onda",
-    title: "Primero estrategia. Siempre creatividad.",
+    tag: "Por qué elegirnos",
+    imageAlt: "Espacio de trabajo de Onda Social",
+    approachTag: "Nuestro enfoque",
+    title: "Estrategia social pensada para tu crecimiento",
+    lead: "Unimos pensamiento creativo, estrategia inteligente y datos para que tu marca destaque, conecte con el público adecuado y crezca de forma constante.",
+    approachLead:
+      "Combinamos estrategia social, contenido creativo y campañas orientadas a resultados para que las marcas destaquen online. Cada decisión gira en torno a tu audiencia, tus objetivos y un crecimiento medible.",
     items: [
-      {
-        title: "Estrategia antes que posts",
-        desc: "Acordamos qué trabajo tiene que hacer social antes de diseñar una sola pieza.",
-      },
-      {
-        title: "Creatividad con motivo",
-        desc: "Cada formato existe para ganar el siguiente segundo de atención y una acción medible.",
-      },
-      {
-        title: "Datos en la mesa",
-        desc: "Reporting que dice qué funcionó, qué no y qué cambiamos la semana que viene.",
-      },
-      {
-        title: "Un solo equipo",
-        desc: "Estrategia, creatividad, medios y medición en la misma conversación.",
-      },
+      "Marketing con estrategia",
+      "Contenido y diseño",
+      "UGC y vídeo",
+      "Campañas con datos",
+      "Crecimiento medible",
     ],
   },
+
   process: {
-    eyebrow: "05 — Proceso",
-    title: "Cuatro pasos, sin misterio.",
+    tag: "Proceso",
+    title: "Nuestra hoja de ruta hacia tu crecimiento",
+    subtitle:
+      "Así convertimos ideas creativas y estrategias sociales inteligentes en resultados medibles.",
     steps: [
       {
-        title: "Descubrir",
-        desc:
-          "Empezamos entendiendo la marca desde dentro: objetivos, audiencia, competencia y qué la hace distinta.",
+        name: "Descubrir",
+        desc: "Empezamos entendiendo tu marca desde dentro: objetivos, público, competencia, presencia actual en redes y aquello que te hace diferente.",
       },
       {
-        title: "Estrategia",
-        desc:
-          "Una hoja de ruta pensada para maximizar el impacto online, donde cada publicación responde a un objetivo de negocio.",
+        name: "Estrategia",
+        desc: "Diseñamos una hoja de ruta a medida para maximizar tu impacto online, alineando cada publicación y campaña con tus objetivos de negocio.",
       },
       {
-        title: "Crear y lanzar",
-        desc:
-          "Producimos el contenido y lanzamos las campañas en las plataformas que de verdad importan a tu audiencia.",
+        name: "Crear y lanzar",
+        desc: "Nuestro equipo produce contenido con gancho y lanza campañas segmentadas que dan vida a la estrategia en cada plataforma.",
       },
       {
-        title: "Analizar y crecer",
-        desc:
-          "Medimos, leemos los números y optimizamos en tiempo real para que el crecimiento componga en lugar de estancarse.",
+        name: "Analizar y crecer",
+        desc: "Medimos el rendimiento de forma continua, analizamos las métricas clave y optimizamos las campañas en tiempo real para asegurar un crecimiento sostenido.",
       },
     ],
+    metrics: [
+      { value: "+185%", label: "Crecimiento de interacción" },
+      { value: "+320%", label: "Alcance social" },
+      { value: "240%", label: "Crecimiento de ventas" },
+      { value: "500K+", label: "Visualizaciones" },
+      { value: "4.9/5", label: "Satisfacción" },
+      { value: "95%", label: "Retención de clientes" },
+    ],
   },
+
   pricing: {
-    eyebrow: "06 — Planes",
-    title: "Un plan para cada etapa.",
-    aside:
-      "Empieza con lo que necesitas hoy y amplía el alcance a medida que llegan los resultados.",
-    note: "Precios en USD al mes. Cancela cuando quieras.",
+    tag: "Precios",
+    title: "Planes para cada etapa",
+    subtitle:
+      "Elige el plan que encaja con tu marca hoy y amplía tu estrategia en redes a medida que creces.",
+    included: "Qué incluye",
+    getStarted: "Empezar",
     plans: [
       {
         name: "Starter",
         price: "$499",
         period: "/ mes",
-        description: "Para marcas que están construyendo su presencia.",
+        description: "Para marcas que construyen su presencia social.",
         features: [
-          "2 plataformas sociales",
-          "12 publicaciones al mes",
-          "5 audiencias objetivo",
+          "2 redes sociales",
+          "12 publicaciones / mes",
+          "5 públicos objetivo",
           "3 estrategias de interacción",
           "1 calendario de contenido",
         ],
-        featured: false,
-        cta: "Empezar",
       },
       {
         name: "Professional",
         price: "$999",
         period: "/ mes",
-        description: "Para marcas listas para crecer de forma constante.",
+        description: "Para marcas listas para crecer con constancia.",
         features: [
-          "4 plataformas sociales",
-          "25 publicaciones al mes",
-          "10 audiencias objetivo",
+          "4 redes sociales",
+          "25 publicaciones / mes",
+          "8 públicos objetivo",
           "6 estrategias de interacción",
           "2 calendarios de contenido",
         ],
-        featured: true,
-        cta: "Elegir Professional",
       },
       {
         name: "Enterprise",
-        price: "$1.999",
+        price: "$1999",
         period: "/ mes",
-        description: "Para equipos que necesitan un sistema completo.",
+        description: "Para marcas que buscan una solución integral de crecimiento social.",
         features: [
-          "Plataformas ilimitadas",
-          "50 publicaciones al mes",
-          "Audiencias ilimitadas",
-          "Estrategias avanzadas",
-          "Calendarios a medida",
+          "Redes sociales ilimitadas",
+          "50 publicaciones / mes",
+          "Públicos objetivo ilimitados",
+          "Estrategias de interacción avanzadas",
+          "Calendarios de contenido a medida",
         ],
-        featured: false,
-        cta: "Hablar con ventas",
       },
     ],
   },
+
   testimonials: {
-    eyebrow: "07 — Testimonios",
-    title: "Lo que dicen nuestros partners.",
-    items: [
-      {
-        quote: "El retorno en publicidad se disparó el primer trimestre. Solo el reporting cambió cómo planificamos.",
-        name: "Marta Ruiz",
-        role: "Fundadora, Velora",
-        initials: "MR",
-      },
-      {
-        quote: "Reconstruyeron nuestra presencia en redes desde cero y consiguieron que se sintiera nuestra, solo más afilada.",
-        name: "Diego Ferrán",
-        role: "Director de marketing, NourishCo",
-        initials: "DF",
-      },
-      {
-        quote: "Profesionales, creativos y de verdad obsesionados con los números. Una combinación poco común.",
-        name: "Lucía Vidal",
-        role: "Responsable de crecimiento, LumaSkin",
-        initials: "LV",
-      },
+    tag: "Testimonios",
+    title: "Opiniones de clientes",
+    subtitle:
+      "Trabajamos codo con codo con marcas ambiciosas para crear estrategias sociales que marcan la diferencia. Esto es lo que dicen algunos de nuestros clientes.",
+    quotes: [
+      '"¡La mejor agencia! Nuestro ROI se disparó."',
+      '"Transformaron por completo nuestra marca."',
+      '"Muy recomendables para crecer en serio."',
+      '"Profesionales, creativos y centrados en datos."',
+      '"Nos encanta nuestra nueva presencia social."',
+      '"Un placer absoluto trabajar con ellos."',
+      '"Los resultados hablan por sí solos."',
+      '"Una atención al detalle excepcional."',
+      '"Duplicamos las ventas en 3 meses."',
+      '"Un socio real para nuestro éxito."',
     ],
   },
+
   faq: {
-    eyebrow: "08 — Preguntas",
-    title: "Las dudas que nos llegan cada semana.",
+    tag: "Preguntas",
+    title: "Todo lo que necesitas saber",
+    subtitle:
+      "Todo lo que conviene saber antes de empezar a trabajar juntos. ¿Te queda alguna duda? Escríbenos y respondemos en un día laborable.",
+    questionsLabel: "Preguntas",
+    answerLabel: "Respuesta",
+    contactText: "¿No encuentras lo que buscas?",
+    contactCta: "Contactar",
     items: [
       {
-        question: "¿Qué hace exactamente una agencia de social media?",
+        question: "¿Qué hace una agencia de social media?",
         answer:
-          "Gestionamos y hacemos crecer tu presencia con estrategia, producción de contenido, campañas de pago, gestión de comunidad y reporting de resultados.",
+          "Gestionamos y hacemos crecer tu presencia en redes sociales con estrategia, contenido, publicidad, gestión de comunidad y medición de resultados.",
       },
       {
         question: "¿Con qué plataformas trabajáis?",
         answer:
-          "Instagram, TikTok, LinkedIn, Facebook, YouTube y Pinterest. Recomendamos las dos o tres donde tu audiencia pasa tiempo de verdad.",
+          "Trabajamos con las principales plataformas: Instagram, TikTok, LinkedIn, Facebook, X (Twitter) y Pinterest, para maximizar tu alcance.",
       },
       {
-        question: "¿Podéis crear el contenido por nosotros?",
+        question: "¿Creáis el contenido de mi marca?",
         answer:
-          "Sí. Un equipo creativo dedicado produce fotografía, vídeo corto, gráfica y copy adaptados a la voz de tu marca.",
+          "Sí. Tenemos un equipo creativo que produce fotografía de alta calidad, vídeo corto, gráfica y textos adaptados al tono de tu marca.",
       },
       {
         question: "¿Gestionáis publicidad de pago?",
         answer:
-          "Planificamos, lanzamos y optimizamos campañas de paid social de principio a fin, con presupuesto y objetivos acordados antes de arrancar.",
+          "Por supuesto. Diseñamos, lanzamos y optimizamos campañas de pago para atraer tráfico cualificado, contactos y conversiones con un buen ROI.",
       },
       {
-        question: "¿Cuánto tarda en verse el resultado?",
+        question: "¿Cuánto se tarda en ver resultados?",
         answer:
-          "Las primeras señales de interacción suelen aparecer en semanas. El crecimiento constante y el retorno medible suelen llegar entre tres y seis meses de trabajo sostenido.",
+          "Los primeros picos de interacción pueden llegar en semanas, pero un crecimiento constante y un ROI medible suelen requerir de 3 a 6 meses de estrategia sostenida.",
       },
     ],
   },
+
   footer: {
-    brand: "Onda",
-    eyebrow: "Cuando quieras",
-    title: "Crezcamos algo que merezca seguir.",
-    email: "hola@onda.example",
-    locations: "Madrid · Remoto",
-    socials: [
-      { label: "Instagram", href: "#contact" },
-      { label: "LinkedIn", href: "#contact" },
-      { label: "TikTok", href: "#contact" },
-    ],
-    columns: [
-      {
-        title: "Agencia",
-        links: [
-          { label: "Trabajo", href: "#work" },
-          { label: "Servicios", href: "#services" },
-          { label: "Sobre", href: "#about" },
-          { label: "Proceso", href: "#process" },
-        ],
-      },
-      {
-        title: "Planes",
-        links: [
-          { label: "Starter", href: "#pricing" },
-          { label: "Professional", href: "#pricing" },
-          { label: "Enterprise", href: "#pricing" },
-          { label: "FAQ", href: "#faq" },
-        ],
-      },
-    ],
-    copyright: "© 2026 Onda Social",
-    disclaimer: "Los casos usan marcas ficticias y cifras ilustrativas.",
+    headline: "No dudes en escribirnos",
+    cta: "Empezar",
+    navigationTitle: "Navegación",
+    servicesTitle: "Servicios",
+    connectTitle: "Conectar",
+    aboutTitle: "Onda Social 2026",
+    aboutText: "Estrategia, contenido y campañas en redes sociales para marcas ambiciosas.",
+    address: "Madrid, España",
+    navigation: ["Trabajos", "Servicios", "Nosotros", "Proceso"],
+    services: ["Estrategia social", "Creación de contenido", "Publicidad social", "UGC y vídeo"],
+    connect: ["Instagram", "Behance", "LinkedIn", "Dribbble"],
+    copyright: "© 2026 Onda Social. Todos los derechos reservados.",
   },
+
   notFound: {
-    title: "Esta página se fue de cobertura.",
-    body: "El enlace que seguiste no existe o el contenido se mudó a otro sitio.",
+    title: "Esta página se ha ido.",
+    body: "El enlace que has seguido ya no existe. Volvamos a lo bueno.",
     cta: "Volver al inicio",
   },
 };

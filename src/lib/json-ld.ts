@@ -13,7 +13,6 @@ export function buildJsonLd(locale: Locale, dict: Dictionary) {
         "@id": `${site.url}#organization`,
         name: site.name,
         url: site.url,
-        email: dict.footer.email,
         areaServed: "Worldwide",
         description: dict.meta.description,
         sameAs: [site.url],

@@ -1,125 +1,56 @@
 @import "tailwindcss";
 
-@theme inline {
-  --color-paper: var(--paper);
-  --color-cream: var(--cream);
-  --color-forest: var(--forest);
-  --color-mint: var(--mint);
-  --color-ink: var(--ink);
-  --color-slate: var(--slate);
-  --color-pink: var(--pink);
-  --color-violet: var(--violet);
-  --color-magenta: var(--magenta);
-
-  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-goudy), ui-serif, Georgia, serif;
-
-  --radius-panel: 60px;
-  --radius-card: 32px;
+@font-face {
+  font-family: "Inter Tight";
+  src: url("/fonts/inter-tight-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  src: url("/fonts/goudy-bookletter-1911-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 :root {
-  --paper: #fbfbdc;
-  --cream: #fffef5;
-  --forest: #024e46;
-  --mint: #109d75;
-  --ink: #101826;
-  --slate: #6a7381;
-  --pink: #f680a3;
-  --violet: #9f82ff;
-  --magenta: #fc7aec;
+  color-scheme: light;
 }
 
-@layer base {
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    margin: 0;
-    background-color: var(--paper);
-    color: var(--ink);
-    font-family: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  ::selection {
-    background: var(--mint);
-    color: var(--cream);
-  }
-
-  :focus-visible {
-    outline: 2px solid var(--forest);
-    outline-offset: 3px;
-  }
-
-  section {
-    scroll-margin-top: 5rem;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
+body {
+  margin: 0;
+  background: #f6f5f2;
+  color: #20221f;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-@keyframes spin-slow {
-  to {
-    transform: rotate(360deg);
-  }
+::selection {
+  background: #034f46;
+  color: #fafadc;
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@layer utilities {
-  .animate-rise {
-    animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-  }
-
-  .animate-spin-slow {
-    animation: spin-slow var(--spin-duration, 44s) linear infinite;
-  }
-
-  .animate-spin-reverse {
-    animation: spin-slow var(--spin-duration, 44s) linear infinite reverse;
-  }
-
-  .animate-marquee {
-    animation: marquee 34s linear infinite;
-  }
-
-  .text-balance {
-    text-wrap: balance;
-  }
+:focus-visible {
+  outline: 2px solid #034f46;
+  outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+}
 
-  .animate-rise,
-  .animate-spin-slow,
-  .animate-spin-reverse,
-  .animate-marquee {
-    animation: none;
-  }
+/* Spanish does not use Title Case; the imported design relies on `capitalize`. */
+html[lang="es"] *:not(.col-title) {
+  text-transform: none !important;
 }

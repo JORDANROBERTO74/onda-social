@@ -1,142 +1,100 @@
-﻿# Onda Social â€” Creative & Paid Social Landing
+﻿# Onda Social — Social Media Agency Landing
 
-Turn social media into real business growth. A bilingual landing page for a social media marketing agency: strategy, paid campaigns, content and UGC, with transparent plans and a full case-study selector.
+A faithful, bilingual rebrand of a social-media agency landing page: ten animated sections, a scroll-driven services deck, an interactive case-study selector, pricing, testimonials, an FAQ and a full-width contact footer.
 
-![Onda Social Preview](docs/screenshot.webp)
+![Onda Social preview](docs/screenshot.webp)
 
 ## Overview
 
-Onda is a single-page agency site with ten sections: hero, about, services, case studies, differentiators, process, pricing, testimonials, FAQ and contact footer. It keeps the bold, high-contrast language of the reference â€” deep forest green over warm paper, serif display type against a tight grotesk â€” rebuilt as a responsive, typed and accessible implementation.
+Onda Social keeps the original composition, motion and media of the reference build — the fixed 1600 px artboard, the sticky services cards, the icon orbit, the marquee, the scroll-linked process steps and the hero reel — and replaces only what could not ship as-is: brand names, third-party client logos, stock people photography and the vendor credit.
 
-Both locales are statically generated, every image and font is self-hosted, and the structured data describes the organisation, its services and the FAQ.
+English and Spanish are both statically generated from typed dictionaries; the language switch preserves the current route.
 
 ## Key Features
 
-- **Bilingual routing (`en` / `es`):** Typed dictionaries, `/[locale]` App Router segments, `Accept-Language` negotiation and an `onda.locale` cookie that keeps the visitor's choice.
-- **Case-study selector:** Four fictional clients with animated metric counters, proper `tablist`/`tabpanel` semantics and arrow-key navigation.
-- **Motion without a library:** A CSS-orbit hero, a CSS entrance sequence and `requestAnimationFrame` counters. Everything stops under `prefers-reduced-motion`.
-- **Accessible accordion and menu:** `aria-expanded`/`aria-controls` on the FAQ, `Escape` and focus-visible styles on the mobile menu.
-- **Self-hosted imagery:** Six studio photographs generated for this project and served through `next/image` â€” no stock libraries, no remote media.
-- **Self-hosted typography:** Inter Tight and Goudy Bookletter 1911 bundled at build time via `next/font/google`; the browser never contacts a font CDN.
-- **Structured data:** `Organization`, `Service` with an offer catalogue, and `FAQPage` generated from the same dictionaries as the page.
-- **Localised 404:** A `[locale]/[...rest]` catch-all renders the styled not-found page instead of the framework default.
+- **Faithful port:** every section, animation and interaction of the reference is preserved (`framer-motion`, scroll progress, sticky stacking, marquees).
+- **Bilingual (`en` / `es`):** typed dictionaries shared with the metadata, OpenGraph card, JSON-LD and 404 page, plus `Accept-Language` negotiation and an `onda.locale` cookie.
+- **Self-hosted everything:** no remote images, fonts, videos or CDNs. Media lives in `public/media`, fonts (Inter Tight, Goudy Bookletter 1911) in `public/fonts`.
+- **Fictional roster:** the client logos and case studies are invented (Velora, NourishCo, LUMASKIN, techora_, RIDEON, NORDIKA) and the figures are illustrative.
+- **SEO:** canonical + `hreflang` alternates, multilingual `sitemap.xml`, `robots.txt`, a generated 1200×630 OpenGraph card and `Organization` / `Service` / `FAQPage` JSON-LD.
+- **Localised 404** through a `[locale]/[...rest]` catch-all.
 
 ## Tech Stack
 
-- **Framework:** Next.js 16.4.3 (App Router, Turbopack)
-- **Library:** React 19.2.4
-- **Language:** TypeScript 5.7.3 (strict)
-- **Styling:** Tailwind CSS 4.3.3 with CSS-first `@theme` tokens
-- **Icons:** Lucide React
-- **Analytics:** `@vercel/analytics`
-- **Package Manager:** pnpm 11.17
-
-## Architecture
-
-```
-onda-social/
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ provenance.md          # Compliance ledger and transformation history
-â”‚   â””â”€â”€ screenshot.webp        # Visual preview artifact
-â”œâ”€â”€ public/
-â”‚   â””â”€â”€ images/                # Two studio images and four case-study images
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ app/
-â”‚   â”‚   â”œâ”€â”€ [locale]/
-â”‚   â”‚   â”‚   â”œâ”€â”€ [...rest]/page.tsx   # Catch-all that renders the 404
-â”‚   â”‚   â”‚   â”œâ”€â”€ layout.tsx     # Locale shell, font variables, analytics
-â”‚   â”‚   â”‚   â”œâ”€â”€ not-found.tsx  # Styled 404
-â”‚   â”‚   â”‚   â”œâ”€â”€ opengraph-image.tsx  # 1200x630 social card
-â”‚   â”‚   â”‚   â””â”€â”€ page.tsx       # Composed landing route
-â”‚   â”‚   â”œâ”€â”€ globals.css        # Design tokens, keyframes and base layers
-â”‚   â”‚   â”œâ”€â”€ icon.svg           # Wave brand mark and favicon
-â”‚   â”‚   â”œâ”€â”€ robots.ts
-â”‚   â”‚   â””â”€â”€ sitemap.ts
-â”‚   â”œâ”€â”€ components/            # header, hero, about, services, case-studies,
-â”‚   â”‚                          # why-us, process, pricing, testimonials, faq, footer
-â”‚   â”œâ”€â”€ config/site.ts         # Domain and locale configuration
-â”‚   â”œâ”€â”€ i18n/
-â”‚   â”‚   â”œâ”€â”€ config.ts          # Locale list and cookie name
-â”‚   â”‚   â”œâ”€â”€ dictionaries/      # Typed English and Spanish copy
-â”‚   â”‚   â””â”€â”€ get-dictionary.ts
-â”‚   â”œâ”€â”€ lib/
-â”‚   â”‚   â”œâ”€â”€ json-ld.ts         # Organization, Service and FAQPage graph
-â”‚   â”‚   â””â”€â”€ seo.ts             # Canonical and hreflang metadata builder
-â”‚   â””â”€â”€ proxy.ts               # Locale detection and persistence
-â”œâ”€â”€ eslint.config.mjs
-â”œâ”€â”€ next.config.ts
-â”œâ”€â”€ package.json
-â””â”€â”€ tsconfig.json
-```
+- Next.js 16.4.3 (App Router, Turbopack), React 19
+- TypeScript 5.7 (strict), Tailwind CSS 4 for the base layer
+- `framer-motion` for the original motion system
+- `@vercel/analytics`
+- pnpm 11.17
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js >= 20.9.0
-- pnpm >= 10.0.0
-
-### Installation
 
 ```bash
 git clone https://github.com/JORDANROBERTO74/onda-social.git
 cd onda-social
 pnpm install
-```
-
-### Development
-
-```bash
 pnpm dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000). The root redirects to `/en` or `/es` based on the request.
-
-### Quality Checks
+`/` redirects to `/en` or `/es` from the request headers.
 
 ```bash
-pnpm typecheck   # TypeScript, no emit
-pnpm lint        # ESLint flat config
-pnpm build       # Production build
+pnpm typecheck   # tsc --noEmit
+pnpm lint        # eslint
+pnpm build       # production build
 ```
+
+## Architecture
+
+```
+onda-social/
+├── docs/                 # provenance ledger, preview, comparison captures
+├── public/
+│   ├── fonts/            # Inter Tight + Goudy Bookletter 1911 (woff2)
+│   └── media/            # images, platform logos, two reels
+└── src/
+    ├── app/
+    │   ├── [locale]/     # layout, page, 404, OpenGraph image, catch-all
+    │   ├── globals.css   # @font-face, base layer, locale typography
+    │   └── icon.svg      # diamond brand mark
+    ├── components/
+    │   ├── sections/     # header, about, services, case-studies, why-us,
+    │   │                 # process, pricing, testimonials, faq, footer
+    │   └── language-switcher.tsx
+    ├── config/site.ts
+    ├── i18n/             # config, dictionaries, copy context
+    ├── lib/              # seo.ts, json-ld.ts
+    └── proxy.ts          # locale negotiation
+```
+
+Section components read copy through `useCopy()` (`src/i18n/copy-context.tsx`), so the same client tree renders either locale without prop drilling.
 
 ## Deployment
 
-The site is deployed on Vercel with the default Next.js preset. Import the repository, or run:
+Vercel, default Next.js preset:
 
 ```bash
 vercel deploy --prod
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` when serving from a custom domain; otherwise the canonical URL falls back to `https://ondasocial.vercel.app`.
+`NEXT_PUBLIC_SITE_URL` overrides the canonical origin; otherwise it falls back to `https://ondasocial.vercel.app`.
 
-## Performance & SEO
+## Accessibility Notes
 
-- `/en` and `/es` are statically generated; the locale redirect runs in edge middleware.
-- Every photograph is served through `next/image` with responsive `srcset` and AVIF/WebP negotiation.
-- `sitemap.xml` and `robots.txt` are derived from the locale configuration.
-- OpenGraph and Twitter cards are generated at request time from the same dictionaries as the page.
-- `hreflang` alternates (`en`, `es`, `x-default`) and a per-locale canonical URL are emitted on every route.
-- Fonts are preloaded by `next/font` with automatic size-adjust metrics, so there is no layout shift.
-
-## Accessibility
-
-- Semantic landmarks (`header`, `nav`, `main`, `section`, `footer`) and a single `h1` per locale.
-- Case-study tabs use `role="tablist"`, `aria-selected` and roving `tabIndex` with arrow-key support.
-- FAQ items expose `aria-expanded` and `aria-controls`; the answer region is labelled by its trigger.
-- Mobile menu: `aria-expanded`, `aria-controls`, `Escape` to close, focus-visible styles on every control.
-- Forest on paper and cream on forest exceed WCAG AA; mint is only used for large text and accents.
+- One `h1` per locale, semantic landmarks and labelled controls.
+- The original layout is a scaled 1600 px artboard; on small screens it renders as a scaled-down composition rather than a reflowed layout. That is a deliberate fidelity trade-off.
+- Spanish suppresses the source design's `text-transform: capitalize`, which is typographically wrong in Spanish.
 
 ## Compliance & Licensing
 
-This project was rebuilt under clean-room principles:
+- No third-party client logos, trademarks, stock photography or likenesses.
+- All faces were removed; replacement imagery contains no people.
+- Platform icons (`public/media/social-1..9.svg`) are generic social-network glyphs, kept from the reference as requested.
+- The reels are the reference's own demo media, kept as requested; see the note in [`docs/provenance.md`](docs/provenance.md).
+- Case studies, metrics and testimonials are fictional.
 
-- No proprietary trademarks, third-party logos, stock photography or celebrity likenesses.
-- All copy and the Spanish translation are original to this project.
-- The six photographs were generated for this build and ship with the repository.
-- Case studies are fictional and the page states so; metrics are illustrative.
-- The full audit trail lives in [`docs/provenance.md`](docs/provenance.md).
+Full audit trail: [`docs/provenance.md`](docs/provenance.md).
 
 ## License
 
-This project is licensed under the MIT License â€” see the [LICENSE](LICENSE) file for details.
+MIT — see [LICENSE](LICENSE).

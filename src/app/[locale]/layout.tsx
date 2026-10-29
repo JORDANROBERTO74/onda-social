@@ -1,26 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
-import { Goudy_Bookletter_1911, Inter_Tight } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { isLocale, locales } from "@/i18n/config";
 import { site } from "@/config/site";
 import "../globals.css";
 
-const interTight = Inter_Tight({
-  subsets: ["latin"],
-  variable: "--font-inter-tight",
-  display: "swap",
-});
-
-const goudy = Goudy_Bookletter_1911({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-goudy",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#034f46",
 };
 
 export function generateStaticParams() {
@@ -41,8 +32,8 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} className={`${interTight.variable} ${goudy.variable}`}>
-      <body className="bg-paper text-ink antialiased font-sans">
+    <html lang={locale}>
+      <body className="antialiased">
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>

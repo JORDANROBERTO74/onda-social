@@ -29,38 +29,39 @@ export default async function Image({
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          background: "#fbfbdc",
-          color: "#101826",
+          background: "#FBFBDC",
+          color: "#024E46",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <span style={{ fontSize: "26px", fontWeight: 600, letterSpacing: "-0.02em" }}>
-            Onda
-          </span>
-          <span
-            style={{
-              width: "10px",
-              height: "10px",
-              borderRadius: "999px",
-              background: "#109d75",
-            }}
-          />
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
           <div
             style={{
-              fontSize: "72px",
-              fontWeight: 600,
-              letterSpacing: "-0.03em",
-              lineHeight: 1.05,
-              maxWidth: "920px",
+              width: "28px",
+              height: "26px",
+              background: "#024E46",
+              clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+            }}
+          />
+          <span style={{ fontSize: "26px", fontWeight: 500, letterSpacing: "-0.01em" }}>
+            Onda Social
+          </span>
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+          <div
+            style={{
+              fontFamily: "serif",
+              fontSize: "76px",
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              lineHeight: 1.02,
+              maxWidth: "940px",
             }}
           >
-            {`${dict.hero.titleLead} ${dict.hero.titleEmphasis} ${dict.hero.titleTail}`}
+            {dict.header.heroTitle}
           </div>
-          <div style={{ fontSize: "22px", color: "#6a7381", maxWidth: "760px", lineHeight: 1.45 }}>
-            {dict.meta.ogTagline}
+          <div style={{ fontSize: "22px", color: "#3F6B61", maxWidth: "780px", lineHeight: 1.45 }}>
+            {dict.meta.description}
           </div>
         </div>
 
@@ -69,16 +70,16 @@ export default async function Image({
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            borderTop: "1px solid #d8d8b8",
+            borderTop: "1px solid rgba(2, 78, 70, 0.25)",
             paddingTop: "24px",
             fontSize: "15px",
             letterSpacing: "0.12em",
             textTransform: "uppercase",
-            color: "#6a7381",
+            color: "#3F6B61",
           }}
         >
           <span>{site.domain}</span>
-          <span>{dict.footer.locations}</span>
+          <span>{dict.footer.address}</span>
         </div>
       </div>
     ),
