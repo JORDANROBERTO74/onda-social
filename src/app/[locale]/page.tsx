@@ -44,7 +44,7 @@ export default async function Page({
 
   return (
     <CopyProvider dict={dict}>
-      <main className="min-h-screen overflow-x-hidden bg-[#f6f5f2] text-[#20221f]">
+      <main className="min-h-screen overflow-x-clip bg-[#f6f5f2] text-[#20221f]">
         <Header />
         <About />
         <Services />
