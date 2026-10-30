@@ -97,4 +97,4 @@ Full audit trail: [`docs/provenance.md`](docs/provenance.md).
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+Proprietary, all rights reserved. See [LICENSE](LICENSE).

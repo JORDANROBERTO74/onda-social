@@ -78,3 +78,8 @@ All runtime assets are local — 0 remote URLs in the built site.
 - Section offsets match the reference within a few pixels at 1440×900; `docs/cmp-original.png` and `docs/cmp-port.png` are the comparison captures.
 - Rendered at 1440, 768 and 390 px.
 - `robots.txt`, multilingual `sitemap.xml`, `hreflang` alternates, a generated OpenGraph card and JSON-LD (`Organization`, `Service`, `FAQPage`) are in place.
+
+## License note
+
+This repository contains derivative work. The license covers only the original
+contributions of the copyright holder. See [LICENSE](../LICENSE).
